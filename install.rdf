@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="attachment-encoding-localized-autodetect@clear-code.com"
+                   em:name="Attachemnt Encoding Detector"
+                   em:version="1.0"
+                   em:creator="ClearCode Inc."
+                   em:description="To detect file encoding of attachments, this forces to Thunderbird to use an encoding detector for a specific locale instead of the generic one."
+                   em:homepageURL="http://www.clear-code.com/">
+
+    <!--em:updateURL></em:updateURL-->
+    <!--em:updateKey></em:updateKey-->
+
+    <em:localized>
+      <RDF:Description em:locale="en-US"
+                       em:name="Attachemnt Encoding Detector"
+                       em:description="To detect file encoding of attachments, this forces to Thunderbird to use an encoding detector for a specific locale instead of the generic one."
+                       em:homepageURL="http://www.clear-code.com/"
+                       em:creator="ClearCode Inc.">
+      </RDF:Description>
+    </em:localized>
+    <em:localized>
+      <RDF:Description em:locale="ja"
+                       em:name="添付ファイルの文字エンコーディングの自動判別"
+                       em:description="添付ファイルの文字エンコーディングの自動判別に際して、汎用の判別器の代わりに言語別の判別器を使うようにします。"
+                       em:homepageURL="http://www.clear-code.com/"
+                       em:creator="ClearCode Inc.">
+      </RDF:Description>
+    </em:localized>
+
+    <em:targetApplication>
+      <!-- Thunderbird -->
+      <RDF:Description em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                       em:minVersion="10"
+                       em:maxVersion="14.*" />
+    </em:targetApplication>
+  </RDF:Description>
+</RDF:RDF>

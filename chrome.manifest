@@ -1,0 +1,2 @@
+component	{75c97b40-c02f-11e1-afa7-0800200c9a66}	components/LocalizedDetector.js
+contract	@mozilla.org/intl/charsetdetect;1?type=universal_charset_detector	{75c97b40-c02f-11e1-afa7-0800200c9a66}
