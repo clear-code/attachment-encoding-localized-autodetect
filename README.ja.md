@@ -1,11 +1,27 @@
 # これは何？
 
 以下のコミットが反映されて以降のバージョンのThunderbirdでは、プレーンテキスト形式のファイルをメールに添付する際に、内容の文字エンコーディングが自動判別されるようになりました。
+
 http://hg.mozilla.org/comm-central/rev/2b9773749c86
 
 しかしながら、常に一般的な判別器が使われるために、Thunderbirdはしばしば文字エンコーディングの判別に失敗します。例えば日本語環境では、Shift_JISとEUC-JPはwindows-1252と誤判定されやすいです。
 
 このアドオンは、上記の場面でシステムの言語に適した判別器を使うよう、Thunderbirdに対して矯正します。その結果、プレーンテキスト形式の添付ファイルは正しいエンコーディング情報を伴って添付されるようになります。
+
+## このアドオンが必要なThunderbirdのバージョンについて
+
+Thunderbird 31からThunderbird 38の間における以下のコミットにより、一般的な文字エンコーディング判別器が削除されました。
+
+http://hg.mozilla.org/mozilla-central/rev/2f0c68d4d7ca
+
+このコミットは以下のバグを受けてのものでした。
+
+844115 – Remove the "universal" encoding detector (chardet)
+https://bugzilla.mozilla.org/show_bug.cgi?id=844115
+
+この変更により、Thunderbird 38以降では基本的に言語別のエンコーディング判別器が使われるようになりました。
+よって、このアドオンはThunderbird 38以降では利用する必要はありません。
+（判別精度の低い一般的な判別器が再導入された場合には、話は別ですが。）
 
 ## テストの手順
 
