@@ -8,6 +8,9 @@ However, because the universal (global, generic) detector is always used, Thunde
 
 This addon forces Thunderbird to use localized encoding detector based on the system language, As the result, plain text files will be attached with correct encoding.
 
+*This project is currently suspended.*
+See the next section for more details.
+
 ## Versions of Thunderbird who want this addon
 
 By the commit between Thunderbird 31 and Thunderbird 38, the universal charset detector is removed:
